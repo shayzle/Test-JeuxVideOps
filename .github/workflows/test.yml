@@ -21,7 +21,7 @@ jobs:
       - name: Unit Testing
         run: npm run mocha:test
       - name: Functional Tests
-        run: npm run cypress:test
+        run: npm run cypress:run
       - name: Coverage
         run: npm run nyc:coverage
       - name: Generating Docs
