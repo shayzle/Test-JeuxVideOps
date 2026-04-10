@@ -19,4 +19,4 @@ jobs:
       - name: Run linter
         run: npm run eslint:check 
       - name: Unit Testing
-        run: npm run mocha tests
+        run: npm run mocha:tests 
