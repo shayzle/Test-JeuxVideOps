@@ -18,3 +18,5 @@ jobs:
             ls ${{ github.workspace }}
       - name: Run linter
         run: npm run eslint:check 
+      - name: Unit Testing
+        run: npm run mocha tests

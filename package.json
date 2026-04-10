@@ -24,6 +24,7 @@
         "eslint": "^8.57.1",
         "eslint-config-google": "^0.14.0",
         "globals": "^17.4.0",
+        "jest": "^30.3.0",
         "jsdoc": "^4.0.2",
         "jslint": "^0.12.1",
         "mocha": "^10.2.0",
