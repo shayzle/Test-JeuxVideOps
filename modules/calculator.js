@@ -43,6 +43,12 @@ class Calculator {
     return a - b;
   }
 
+  /**
+   * Performs substraction
+   * @param {Float} a
+   * @param {Float} b
+   * @return {Float} Difference between a and b
+   */
   power(a, b) { // NEW FEATURE
     if (b < 0) {
       return 1/ a * this.power(a, b+1);
