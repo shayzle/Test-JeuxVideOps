@@ -17,4 +17,4 @@ jobs:
         run: |
             ls ${{ github.workspace }}
       - name: Run linter
-        run: npm run lint 
+        run: npm run eslint:check 
