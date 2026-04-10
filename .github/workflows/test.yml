@@ -20,3 +20,9 @@ jobs:
         run: npm run eslint:check 
       - name: Unit Testing
         run: npm run mocha:test
+      - name: Functional Tests
+        run: npm run nyc:run
+      - name: Coverage
+        run: npm run nyc:coverage
+      - name: Generating Docs
+        run: npm run jsdoc
