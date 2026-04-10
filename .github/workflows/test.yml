@@ -4,15 +4,17 @@ jobs:
   my_first_job:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout   # premiere step : "Checkout" = une rapide recherche indique qu'on récupère une copie du dépôt;
         uses: actions/checkout@v3
-      - name: Setup node
+      - name: Setup node   # deuxieme step : "Setup node" = une autre recherche indique qu'on installe une version spécifique du NodeJS;
         uses: actions/setup-node@v3
         with:
           node-version: 16.13.x
           cache: npm
-      - name: Install
+      - name: Install   # troisieme step : "Install" = il semblerait qu'on lance une commande spécifique npm ci;
         run: npm ci
       - name: list
         run: |
             ls ${{ github.workspace }}
+      - name: Run linter
+        run: npm run lint 
