@@ -19,7 +19,7 @@ jobs:
       - name: Run linter
         run: npm run eslint:check 
       - name: Unit Testing
-        run: npm run nyc:run   # maybe with npm run nyc:run or mocha:test ? 
+        run: npm run mocha:test   
       - name: Functional Tests
         run: npm run cypress:test
       - name: Coverage
