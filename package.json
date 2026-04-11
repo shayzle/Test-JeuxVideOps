@@ -1,7 +1,7 @@
 {
     "name": "webcalculator",
     "description": "A calculator app in Node.js",
-    "version": 1,
+    "version": "1",
     "scripts": {
         "mocha:test": "mocha tests",
         "nyc:run": "nyc --check-coverage --branches 100 --lines 100 --statements 100 --functions 100 npm run mocha:test",
