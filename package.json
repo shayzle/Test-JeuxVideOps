@@ -4,7 +4,7 @@
     "version": "1",
     "scripts": {
         "mocha:test": "mocha tests",
-        "nyc:run": "nyc --check-coverage --branches 100 --lines 100 --statements 100 --functions 100 npm run mocha:test",
+        "nyc:run": "nyc --check-coverage --branches 100 --lines 100 --statements 100 --functions 100 mocha tests",
         "nyc:coverage": "nyc report --reporter=lcov",
         "cypress:run": "cypress run",
         "cypress:test": "start-server-and-test app:serve http://localhost:3000 cypress:run",
